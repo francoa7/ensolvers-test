@@ -8,6 +8,11 @@ module.exports = function createUserModel(sequelize) {
             allowNull: false,
             primaryKey: true,
         },
+        username: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            notNull: { msg: "No user-username was provided" },
+        },
         email: {
             type: DataTypes.STRING,
             allowNull: false,
