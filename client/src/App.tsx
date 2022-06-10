@@ -8,8 +8,8 @@ function App() {
     return (
         <Stack fontFamily={"raleway"} fontWeight={"bold"}>
             <Routes>
-                <Route path="/" element={<Landing />} />
-                <Route path="/home" element={<Home />} />
+                <Route path="/" element={<Home />} />
+                {/* <Route path="/home" element={<Home />} /> */}
             </Routes>
         </Stack>
     );

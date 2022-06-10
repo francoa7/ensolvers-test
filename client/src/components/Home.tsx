@@ -24,6 +24,7 @@ import Note from "./Note";
 import { User } from "../types/User";
 import { Note as typeNote } from "../types/Note";
 import { MdOutlineArchive } from "react-icons/md";
+import Landing from "./Landing";
 
 function Home() {
     const { logout, user, isAuthenticated, isLoading } = useAuth0();
@@ -57,7 +58,7 @@ function Home() {
 
     return (
         <Stack h={"100vh"} p={"3rem 6rem"}>
-            {user ? (
+            {isAuthenticated && user ? (
                 <>
                     <Stack
                         flexDirection={"row"}
@@ -160,18 +161,19 @@ function Home() {
                     </Stack>
                 </>
             ) : (
-                <Stack
-                    w={"100%"}
-                    h={"100%"}
-                    alignItems={"center"}
-                    justifyContent={"center"}
-                >
-                    <CircularProgress
-                        size={"10vw"}
-                        isIndeterminate
-                        color="green.300"
-                    />
-                </Stack>
+                <Landing />
+                //     <Stack
+                //         w={"100%"}
+                //         h={"100%"}
+                //         alignItems={"center"}
+                //         justifyContent={"center"}
+                //     >
+                //         <CircularProgress
+                //             size={"10vw"}
+                //             isIndeterminate
+                //             color="green.300"
+                //         />
+                //     </Stack>
             )}
         </Stack>
     );

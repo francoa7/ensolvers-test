@@ -22,7 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
                 <Auth0Provider
                     domain="dev-uu7cywer.us.auth0.com"
                     clientId="BHfTfnqUKmITYTqy5JN0yibzTK4dxIS8"
-                    redirectUri={`${window.location.origin}/home`}
+                    redirectUri={`${window.location.origin}`}
                 >
                     <Provider store={store}>
                         <App />
