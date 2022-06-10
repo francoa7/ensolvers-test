@@ -9,10 +9,11 @@ import { Auth0Provider } from "@auth0/auth0-react";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import axios from "axios";
-import dotenv from "dotenv";
-dotenv.config();
+// import dotenv from "dotenv";
+// dotenv.config();
 
-axios.defaults.baseURL = process.env.REACT_APP_API || "http://localhost:5000";
+axios.defaults.baseURL =
+    import.meta.env.REACT_APP_API || "http://localhost:5000";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>

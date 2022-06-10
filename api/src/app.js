@@ -17,5 +17,10 @@ app.use((req, res, next) => {
     next();
 });
 app.use("/", routes);
+app.get("/favicon.ico", (req, res) => {
+    const filepath = path.join(__dirname, "../../../client/public/favicon.ico");
+
+    res.sendFile(filepath);
+});
 
 module.exports = app;
