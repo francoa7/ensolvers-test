@@ -18,7 +18,10 @@ app.use((req, res, next) => {
 });
 app.use("/", routes);
 app.get("/favicon.ico", (req, res) => {
-    const filepath = path.join(__dirname, "../../../client/public/favicon.ico");
+    const filepath = path.join(
+        __dirname,
+        "../../../frontend/public/favicon.ico"
+    );
 
     res.sendFile(filepath);
 });

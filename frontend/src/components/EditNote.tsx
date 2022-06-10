@@ -190,7 +190,7 @@ function EditNote({
                                         errors.description.error
                                     }
                                 >
-                                    Add
+                                    Save
                                 </Button>
                             </Stack>
                         </form>
