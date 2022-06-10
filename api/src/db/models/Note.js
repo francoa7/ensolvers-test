@@ -18,6 +18,11 @@ module.exports = function createNoteModel(sequelize) {
             allowNull: false,
             notNull: { msg: "No note-description was provided" },
         },
+        archived: {
+            type: DataTypes.BOOLEAN,
+            allowNull: false,
+            defaultValue: false,
+        },
     });
     return Note;
 };

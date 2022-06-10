@@ -20,11 +20,6 @@ module.exports = function createUserModel(sequelize) {
             notNull: { msg: "No user-email was provided" },
             unique: true,
         },
-        password: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            notNull: { msg: "No user-password was provided" },
-        },
     });
     return User;
 };
