@@ -22,14 +22,12 @@ export function getUserFromDB(email: string) {
 
 export function getUserNotes(user: any) {
     return function (dispatch: (arg0: { type: string; payload: any }) => any) {
-        return axios
-            .get(`/notes/usernotes/${user.id}`)
-            .then((res) =>
-                dispatch({
-                    type: GET_USER_NOTES,
-                    payload: res.data,
-                })
-            );
+        return axios.get(`/notes/usernotes/${user.id}`).then((res) =>
+            dispatch({
+                type: GET_USER_NOTES,
+                payload: res.data,
+            })
+        );
     };
 }
 
@@ -46,7 +44,6 @@ export function postUserNote(
                 description,
             })
             .then((res) => {
-                console.log(res);
                 return dispatch({
                     type: POST_USER_NOTE,
                     payload: res.data,
@@ -116,7 +113,6 @@ export function archiveNote(noteId: string, userId: string) {
                 userId,
             })
             .then((res) => {
-                console.log(res);
                 return dispatch({
                     type: ARCHIVE_NOTE,
                     payload: res.data,

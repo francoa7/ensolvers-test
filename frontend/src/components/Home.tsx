@@ -135,7 +135,6 @@ function Home() {
                         {userNotes instanceof Array && userNotes.length ? (
                             <>
                                 {userNotes.map((note) => {
-                                    console.log(note.archived);
                                     if (archivedMode) {
                                         if (note.archived)
                                             return (
