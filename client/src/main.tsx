@@ -13,7 +13,7 @@ import axios from "axios";
 // dotenv.config();
 
 axios.defaults.baseURL =
-    import.meta.env.REACT_APP_API || "http://localhost:5000";
+    import.meta.env.VITE_APP_API || "http://localhost:5000";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
