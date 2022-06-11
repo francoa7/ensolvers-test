@@ -12,4 +12,7 @@ It should be noted that this application was `developed in just 3 days` without 
 
 ## Important Information
 
-The local running application was replaced with the online deployed version: https://ensolvers-test.vercel.app/
+The locally executed app has been replaced with the version deployed online, so there is no need to run local files: https://ensolvers-test.vercel.app/
+
+### About
+Application developed by Angulo Franco as an Ensolvers - Interview implementation excercise
