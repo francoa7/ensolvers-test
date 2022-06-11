@@ -4,6 +4,8 @@ This application was developed with the following **tech stack:** <br/>
 - JavaScript, TypeScript, React, Redux, React Hook Forms, Chakra-ui <br/>
 - Nodejs, Expressjs, Sequelize, PostgreSQL, SQL, Vercel and Heroku <br/>
 
+Not mobile adaptive
+
 It should be noted that this application was `developed in just 3 days` without having all the hours to do it. The end result could have been improved if more time had been provided. <br/>
 
 ## Login Credentials
